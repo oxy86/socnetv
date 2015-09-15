@@ -98,15 +98,15 @@ SOURCES += src/guide.cpp \
 
 
 # Extra optimization flags
-win32 {
-  QMAKE_CXXFLAGS += -msse -mfpmath=sse -ffast-math  
-}
-unix:!macx{
-  QMAKE_CXXFLAGS += -ffast-math  
-}
-macx {
-  QMAKE_CXXFLAGS += -msse  -ffast-math 
-}
+#win32 {
+#  QMAKE_CXXFLAGS += -msse -mfpmath=sse -ffast-math  
+#}
+#unix:!macx{
+#  QMAKE_CXXFLAGS += -ffast-math  
+#}
+#macx {
+#  QMAKE_CXXFLAGS += -msse  -ffast-math 
+#}
 
 INCLUDEPATH +=  /usr/local/include /usr/include /usr/include/qt5 /usr/share/qt5/include 
 INCLUDEPATH +=  /usr/local/include /usr/include /usr/include/qt  /usr/include/qt5 /usr/share/qt5/include
